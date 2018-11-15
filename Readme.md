@@ -1,3 +1,11 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Form1.cs](./CS/CustomDialogs/Form1.cs) (VB: [Form1.vb](./VB/CustomDialogs/Form1.vb))
+* [MyFontForm.cs](./CS/CustomDialogs/MyFontForm.cs) (VB: [MyFontForm.vb](./VB/CustomDialogs/MyFontForm.vb))
+* [MyHyperlinkForm.cs](./CS/CustomDialogs/MyHyperlinkForm.cs) (VB: [MyHyperlinkForm.vb](./VB/CustomDialogs/MyHyperlinkForm.vb))
+* [MySearchForm.cs](./CS/CustomDialogs/MySearchForm.cs) (VB: [MySearchForm.vb](./VB/CustomDialogs/MySearchForm.vb))
+<!-- default file list end -->
 # How to customize dialog forms in XtraRichEdit suite
 
 
