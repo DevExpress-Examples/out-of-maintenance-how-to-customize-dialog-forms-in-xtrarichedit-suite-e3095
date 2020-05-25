@@ -22,6 +22,7 @@ namespace CustomDialogs
             string curWord = richEditControl1.Document.GetText(richEditControl1.Document.Selection);
             MySearchTextForm form = new MySearchTextForm(e.ControllerParameters, curWord);
             e.DialogResult = form.ShowDialog();
+            form.Dispose();
             e.Handled = true;
         }
         #endregion #SearchFormShowing
@@ -31,6 +32,7 @@ namespace CustomDialogs
         {
             MyHyperlinkForm form = new MyHyperlinkForm(e.ControllerParameters);
             e.DialogResult = form.ShowDialog();
+            form.Dispose();
             e.Handled = true;
         }
         #endregion #HyperlinkFormShowing
@@ -39,6 +41,7 @@ namespace CustomDialogs
         {
             MyFontForm form = new MyFontForm(e.ControllerParameters);
             e.DialogResult = form.ShowDialog();
+            form.Dispose();
             e.Handled = true;
         }
     }
