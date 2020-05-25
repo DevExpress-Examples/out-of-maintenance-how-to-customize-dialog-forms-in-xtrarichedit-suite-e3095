@@ -1,5 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.Collections.Generic
 Imports System.Text
 Imports DevExpress.XtraRichEdit.Forms
@@ -9,10 +8,12 @@ Imports DevExpress.XtraRichEdit
 Namespace CustomDialogs
 	Friend Class MyFontForm
 		Inherits XtraForm
+
 		Private labelControl1 As LabelControl
 		Private fontEdit1 As FontEdit
 
-		Private controller_Renamed As FontFormController
+'INSTANT VB NOTE: The field controller was renamed since Visual Basic does not allow fields to have the same name as other class members:
+		Private controller_Conflict As FontFormController
 		Private WithEvents btnOk As SimpleButton
 		Private btnCancel As SimpleButton
 		Private richEditControl As RichEditControl
@@ -24,14 +25,14 @@ Namespace CustomDialogs
 
 		Public Sub New(ByVal controllerParameters As FontFormControllerParameters)
 			InitializeComponent()
-			Me.controller_Renamed = CreateController(controllerParameters)
+			Me.controller_Conflict = CreateController(controllerParameters)
 			Me.richEditControl = CType(controllerParameters.Control, RichEditControl)
 			UpdateForm()
 		End Sub
 
 		Public ReadOnly Property Controller() As FontFormController
 			Get
-				Return controller_Renamed
+				Return controller_Conflict
 			End Get
 		End Property
 
@@ -51,7 +52,7 @@ Namespace CustomDialogs
 			Try
 			If richEditControl IsNot Nothing Then
 				Me.fontEdit1.Enabled = richEditControl.Options.DocumentCapabilities.CharacterFormattingAllowed
-				Me.fontEdit1.Text = controller_Renamed.FontName
+				Me.fontEdit1.Text = controller_Conflict.FontName
 			End If
 			Finally
 				SubscribeControlsEvents()
@@ -67,7 +68,7 @@ Namespace CustomDialogs
 		End Sub
 
 		Private Sub fontEdit1_EditValueChanged(ByVal sender As Object, ByVal e As EventArgs)
-			controller_Renamed.FontName = Me.fontEdit1.Text
+			controller_Conflict.FontName = Me.fontEdit1.Text
 		End Sub
 
 		Private Sub InitializeComponent()
@@ -76,7 +77,7 @@ Namespace CustomDialogs
 			Me.fontEdit1 = New DevExpress.XtraEditors.FontEdit()
 			Me.btnOk = New DevExpress.XtraEditors.SimpleButton()
 			Me.btnCancel = New DevExpress.XtraEditors.SimpleButton()
-			CType(Me.fontEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+			DirectCast(Me.fontEdit1.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
 			Me.SuspendLayout()
 			' 
 			' labelControl1
@@ -105,7 +106,8 @@ Namespace CustomDialogs
 			Me.btnOk.Size = New System.Drawing.Size(75, 23)
 			Me.btnOk.TabIndex = 2
 			Me.btnOk.Text = "OK"
-'			Me.btnOk.Click += New System.EventHandler(Me.btnOK_Click);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.btnOk.Click += new System.EventHandler(this.btnOK_Click);
 			' 
 			' btnCancel
 			' 
@@ -125,9 +127,9 @@ Namespace CustomDialogs
 			Me.Controls.Add(Me.btnOk)
 			Me.Controls.Add(Me.fontEdit1)
 			Me.Controls.Add(Me.labelControl1)
-			Me.Icon = (CType(resources.GetObject("$this.Icon"), System.Drawing.Icon))
+			Me.Icon = (DirectCast(resources.GetObject("$this.Icon"), System.Drawing.Icon))
 			Me.Name = "MyFontForm"
-			CType(Me.fontEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+			DirectCast(Me.fontEdit1.Properties, System.ComponentModel.ISupportInitialize).EndInit()
 			Me.ResumeLayout(False)
 			Me.PerformLayout()
 

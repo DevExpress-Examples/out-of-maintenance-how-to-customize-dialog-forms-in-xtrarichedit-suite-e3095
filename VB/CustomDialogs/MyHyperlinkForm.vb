@@ -1,11 +1,11 @@
-#Region "#CustomHyperlinkForm"
-Imports Microsoft.VisualBasic
+﻿#Region "#CustomHyperlinkForm"
 Imports System
 Imports DevExpress.XtraRichEdit.Forms
 
 Namespace CustomDialogs
 	Friend Class MyHyperlinkForm
 		Inherits HyperlinkForm
+
 		Public Sub New(ByVal controllerParameters As HyperlinkFormControllerParameters)
 			MyBase.New(controllerParameters)
 			AddHandler btnEditAddress.EditValueChanged, AddressOf btnEditAddress_EditValueChanged
@@ -18,7 +18,7 @@ Namespace CustomDialogs
 
 		Private Sub btnEditAddress_EditValueChanged(ByVal sender As Object, ByVal e As EventArgs)
 			Controller.NavigateUri = ValidateUrl(btnEditAddress.Text)
-			Me.btnOk.Enabled = Not String.IsNullOrEmpty(Me.btnEditAddress.Text)
+			Me.btnOk.Enabled = True
 		End Sub
 
 		Private Function ValidateUrl(ByVal p As String) As String

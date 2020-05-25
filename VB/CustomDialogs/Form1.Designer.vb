@@ -1,6 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
-Namespace CustomDialogs
+﻿Namespace CustomDialogs
 	Partial Public Class Form1
 		''' <summary>
 		''' Required designer variable.
@@ -231,9 +229,12 @@ Namespace CustomDialogs
 			Me.richEditControl1.Size = New System.Drawing.Size(799, 405)
 			Me.richEditControl1.TabIndex = 0
 			Me.richEditControl1.Text = "richEditControl1"
-'			Me.richEditControl1.SearchFormShowing += New DevExpress.XtraRichEdit.SearchFormShowingEventHandler(Me.richEditControl1_SearchFormShowing);
-'			Me.richEditControl1.FontFormShowing += New DevExpress.XtraRichEdit.FontFormShowingEventHandler(Me.richEditControl1_FontFormShowing);
-'			Me.richEditControl1.HyperlinkFormShowing += New DevExpress.XtraRichEdit.HyperlinkFormShowingEventHandler(Me.richEditControl1_HyperlinkFormShowing);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.richEditControl1.SearchFormShowing += new DevExpress.XtraRichEdit.SearchFormShowingEventHandler(this.richEditControl1_SearchFormShowing);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.richEditControl1.FontFormShowing += new DevExpress.XtraRichEdit.FontFormShowingEventHandler(this.richEditControl1_FontFormShowing);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.richEditControl1.HyperlinkFormShowing += new DevExpress.XtraRichEdit.HyperlinkFormShowingEventHandler(this.richEditControl1_HyperlinkFormShowing);
 			' 
 			' ribbonControl1
 			' 
@@ -437,7 +438,11 @@ Namespace CustomDialogs
 			Me.changeTextCaseItem1.Glyph = (CType(resources.GetObject("changeTextCaseItem1.Glyph"), System.Drawing.Image))
 			Me.changeTextCaseItem1.Id = 25
 			Me.changeTextCaseItem1.LargeGlyph = (CType(resources.GetObject("changeTextCaseItem1.LargeGlyph"), System.Drawing.Image))
-			Me.changeTextCaseItem1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() { New DevExpress.XtraBars.LinkPersistInfo(Me.makeTextUpperCaseItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.makeTextLowerCaseItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.toggleTextCaseItem1)})
+			Me.changeTextCaseItem1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {
+				New DevExpress.XtraBars.LinkPersistInfo(Me.makeTextUpperCaseItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.makeTextLowerCaseItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.toggleTextCaseItem1)
+			})
 			Me.changeTextCaseItem1.Name = "changeTextCaseItem1"
 			' 
 			' makeTextUpperCaseItem1
@@ -516,7 +521,16 @@ Namespace CustomDialogs
 			Me.changeParagraphLineSpacingItem1.Glyph = (CType(resources.GetObject("changeParagraphLineSpacingItem1.Glyph"), System.Drawing.Image))
 			Me.changeParagraphLineSpacingItem1.Id = 37
 			Me.changeParagraphLineSpacingItem1.LargeGlyph = (CType(resources.GetObject("changeParagraphLineSpacingItem1.LargeGlyph"), System.Drawing.Image))
-			Me.changeParagraphLineSpacingItem1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() { New DevExpress.XtraBars.LinkPersistInfo(Me.setSingleParagraphSpacingItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.setSesquialteralParagraphSpacingItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.setDoubleParagraphSpacingItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.showLineSpacingFormItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.addSpacingBeforeParagraphItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.removeSpacingBeforeParagraphItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.addSpacingAfterParagraphItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.removeSpacingAfterParagraphItem1)})
+			Me.changeParagraphLineSpacingItem1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {
+				New DevExpress.XtraBars.LinkPersistInfo(Me.setSingleParagraphSpacingItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.setSesquialteralParagraphSpacingItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.setDoubleParagraphSpacingItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.showLineSpacingFormItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.addSpacingBeforeParagraphItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.removeSpacingBeforeParagraphItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.addSpacingAfterParagraphItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.removeSpacingAfterParagraphItem1)
+			})
 			Me.changeParagraphLineSpacingItem1.Name = "changeParagraphLineSpacingItem1"
 			' 
 			' setSingleParagraphSpacingItem1
@@ -710,7 +724,12 @@ Namespace CustomDialogs
 			Me.changeSectionPageMarginsItem1.Glyph = (CType(resources.GetObject("changeSectionPageMarginsItem1.Glyph"), System.Drawing.Image))
 			Me.changeSectionPageMarginsItem1.Id = 66
 			Me.changeSectionPageMarginsItem1.LargeGlyph = (CType(resources.GetObject("changeSectionPageMarginsItem1.LargeGlyph"), System.Drawing.Image))
-			Me.changeSectionPageMarginsItem1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() { New DevExpress.XtraBars.LinkPersistInfo(Me.setNormalSectionPageMarginsItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.setNarrowSectionPageMarginsItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.setModerateSectionPageMarginsItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.setWideSectionPageMarginsItem1)})
+			Me.changeSectionPageMarginsItem1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {
+				New DevExpress.XtraBars.LinkPersistInfo(Me.setNormalSectionPageMarginsItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.setNarrowSectionPageMarginsItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.setModerateSectionPageMarginsItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.setWideSectionPageMarginsItem1)
+			})
 			Me.changeSectionPageMarginsItem1.Name = "changeSectionPageMarginsItem1"
 			' 
 			' setNormalSectionPageMarginsItem1
@@ -746,7 +765,10 @@ Namespace CustomDialogs
 			Me.changeSectionPageOrientationItem1.Glyph = (CType(resources.GetObject("changeSectionPageOrientationItem1.Glyph"), System.Drawing.Image))
 			Me.changeSectionPageOrientationItem1.Id = 71
 			Me.changeSectionPageOrientationItem1.LargeGlyph = (CType(resources.GetObject("changeSectionPageOrientationItem1.LargeGlyph"), System.Drawing.Image))
-			Me.changeSectionPageOrientationItem1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() { New DevExpress.XtraBars.LinkPersistInfo(Me.setPortraitPageOrientationItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.setLandscapePageOrientationItem1)})
+			Me.changeSectionPageOrientationItem1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {
+				New DevExpress.XtraBars.LinkPersistInfo(Me.setPortraitPageOrientationItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.setLandscapePageOrientationItem1)
+			})
 			Me.changeSectionPageOrientationItem1.Name = "changeSectionPageOrientationItem1"
 			' 
 			' setPortraitPageOrientationItem1
@@ -764,7 +786,11 @@ Namespace CustomDialogs
 			Me.changeSectionColumnsItem1.Glyph = (CType(resources.GetObject("changeSectionColumnsItem1.Glyph"), System.Drawing.Image))
 			Me.changeSectionColumnsItem1.Id = 74
 			Me.changeSectionColumnsItem1.LargeGlyph = (CType(resources.GetObject("changeSectionColumnsItem1.LargeGlyph"), System.Drawing.Image))
-			Me.changeSectionColumnsItem1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() { New DevExpress.XtraBars.LinkPersistInfo(Me.setSectionOneColumnItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.setSectionTwoColumnsItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.setSectionThreeColumnsItem1)})
+			Me.changeSectionColumnsItem1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {
+				New DevExpress.XtraBars.LinkPersistInfo(Me.setSectionOneColumnItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.setSectionTwoColumnsItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.setSectionThreeColumnsItem1)
+			})
 			Me.changeSectionColumnsItem1.Name = "changeSectionColumnsItem1"
 			' 
 			' setSectionOneColumnItem1
@@ -877,7 +903,19 @@ Namespace CustomDialogs
 			Me.changeTableBordersItem1.Glyph = (CType(resources.GetObject("changeTableBordersItem1.Glyph"), System.Drawing.Image))
 			Me.changeTableBordersItem1.Id = 90
 			Me.changeTableBordersItem1.LargeGlyph = (CType(resources.GetObject("changeTableBordersItem1.LargeGlyph"), System.Drawing.Image))
-			Me.changeTableBordersItem1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() { New DevExpress.XtraBars.LinkPersistInfo(Me.toggleTableCellsBottomBorderItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.toggleTableCellsTopBorderItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.toggleTableCellsLeftBorderItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.toggleTableCellsRightBorderItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.resetTableCellsAllBordersItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.toggleTableCellsAllBordersItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.toggleTableCellsOutsideBorderItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.toggleTableCellsInsideBorderItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.toggleTableCellsInsideHorizontalBorderItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.toggleTableCellsInsideVerticalBorderItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.toggleShowTableGridLinesItem1)})
+			Me.changeTableBordersItem1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {
+				New DevExpress.XtraBars.LinkPersistInfo(Me.toggleTableCellsBottomBorderItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.toggleTableCellsTopBorderItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.toggleTableCellsLeftBorderItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.toggleTableCellsRightBorderItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.resetTableCellsAllBordersItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.toggleTableCellsAllBordersItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.toggleTableCellsOutsideBorderItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.toggleTableCellsInsideBorderItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.toggleTableCellsInsideHorizontalBorderItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.toggleTableCellsInsideVerticalBorderItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.toggleShowTableGridLinesItem1)
+			})
 			Me.changeTableBordersItem1.Name = "changeTableBordersItem1"
 			' 
 			' toggleTableCellsBottomBorderItem1
@@ -1003,7 +1041,12 @@ Namespace CustomDialogs
 			Me.selectTableElementsItem1.Glyph = (CType(resources.GetObject("selectTableElementsItem1.Glyph"), System.Drawing.Image))
 			Me.selectTableElementsItem1.Id = 105
 			Me.selectTableElementsItem1.LargeGlyph = (CType(resources.GetObject("selectTableElementsItem1.LargeGlyph"), System.Drawing.Image))
-			Me.selectTableElementsItem1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() { New DevExpress.XtraBars.LinkPersistInfo(Me.selectTableCellItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.selectTableColumnItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.selectTableRowItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.selectTableItem1)})
+			Me.selectTableElementsItem1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {
+				New DevExpress.XtraBars.LinkPersistInfo(Me.selectTableCellItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.selectTableColumnItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.selectTableRowItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.selectTableItem1)
+			})
 			Me.selectTableElementsItem1.Name = "selectTableElementsItem1"
 			' 
 			' selectTableCellItem1
@@ -1039,7 +1082,12 @@ Namespace CustomDialogs
 			Me.deleteTableElementsItem1.Glyph = (CType(resources.GetObject("deleteTableElementsItem1.Glyph"), System.Drawing.Image))
 			Me.deleteTableElementsItem1.Id = 110
 			Me.deleteTableElementsItem1.LargeGlyph = (CType(resources.GetObject("deleteTableElementsItem1.LargeGlyph"), System.Drawing.Image))
-			Me.deleteTableElementsItem1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() { New DevExpress.XtraBars.LinkPersistInfo(Me.showDeleteTableCellsFormItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.deleteTableColumnsItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.deleteTableRowsItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.deleteTableItem1)})
+			Me.deleteTableElementsItem1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {
+				New DevExpress.XtraBars.LinkPersistInfo(Me.showDeleteTableCellsFormItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.deleteTableColumnsItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.deleteTableRowsItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.deleteTableItem1)
+			})
 			Me.deleteTableElementsItem1.Name = "deleteTableElementsItem1"
 			' 
 			' showDeleteTableCellsFormItem1

@@ -1,4 +1,4 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
+﻿Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CustomDialogs", "CustomDialogs\CustomDialogs.vbproj", "{FB41825C-7EA4-43BB-A61B-1E1288161DFC}"
 	ProjectSection(WebsiteProperties) = preProject
